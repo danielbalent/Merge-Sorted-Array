@@ -1,0 +1,28 @@
+def main():
+#this runs a os level command that will clear the screen
+    os.system('cls')
+    print ('welcome to my array tool')
+    #create a variable called nums1 and assign it to the input 
+    n = int(input("Enter the numbers of elements "))
+    nums1_array = []  
+
+    for i in range(n):
+        nums1 = int(input("enter a number_1: "))
+        nums1_array.append (nums1)
+
+    else: m = int(input("Enter the second number of elements "))
+    nums2_array = []
+    
+    for i in range(n):
+        nums2 = int(input("enter a number_2: "))
+        nums2_array.append (nums2)
+
+    final = nums1_array + nums2_array
+    final.sort()
+
+    print (final)
+
+
+if __name__ == "__main__":
+    import os   
+    main()
